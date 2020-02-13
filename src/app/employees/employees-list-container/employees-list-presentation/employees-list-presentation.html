@@ -27,7 +27,9 @@
             <th>{{employeeData.mobileNumber}}</th>
             <th>{{employeeData.cityName}}</th>
             <th>{{employeeData.departmentName}}</th>
-            <th> <button (click)="idDelete(employeeData.id)">Delete</button> </th>
+            <th> <button (click)="idDelete(employeeData.id)">Delete</button>
+                <a routerLink="Edit/{{employeeData.id}}">edit</a>
+            </th>
         </tr>
     </tbody>
 </table>

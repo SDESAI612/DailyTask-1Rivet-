@@ -15,20 +15,23 @@ export class EmployeeFormPresentation implements OnInit {
  
   constructor( private employeeFormPresenter: EmployeesPresenterService) { }
 
-    addData()
+  ngOnInit() {
+    
+    this.employeeForm=this.employeeFormPresenter.buildEmployeeForm();
+     console.log(this.employeeForm);
+     
+   } 
+
+  /**
+   * This funtion will add data to JSON file
+   */  
+ public addData(): void
     {
-      debugger
       // this.employeeForm=this.employeeFormPresenter.buildEmployeeForm()
       this.addEvent.emit(this.employeeForm.value);
     
     }
 
-  ngOnInit() {
-    debugger;
-   this.employeeForm=this.employeeFormPresenter.buildEmployeeForm();
-    console.log(this.employeeForm);
-    
-  }
 
 
 }

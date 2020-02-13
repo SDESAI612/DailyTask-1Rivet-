@@ -8,6 +8,7 @@ import {  EmployeeFormPresentation } from './employees-form-container/employee-f
 import { EmployeesListPresentation } from './employees-list-container/employees-list-presentation/employees-list-presentation';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeesListPreseterService } from './employees-list-container/employees-list-presenter/employees-list-presenter';
 
 @NgModule({
   declarations: [ EmployeesFormContainer, EmployeeFormPresentation, EmployeesListContainer, EmployeesListPresentation],
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
   exports: [
     EmployeesFormContainer,
     EmployeesListPresentation
-  ]
+  ],
+  providers:[EmployeesListPreseterService]
 })
 export class EmployeesModule { }

@@ -43,4 +43,14 @@ export class EmployeesService {
     {
       return this.http.post(this.apiUrl,emp)
     }
+
+    getById(id:number)
+    {
+      return this.http.delete(this.apiUrl+'/'+this.id);
+    }
+
+    public editDetails(id)
+    {
+      // return this.http.put(this.apiUrl+'/'+this.id,)
+    }
 }

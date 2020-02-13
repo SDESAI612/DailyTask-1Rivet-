@@ -65,6 +65,28 @@
       "gender": "MALE",
       "employeeType": "false",
       "id": 8
+    },
+    {
+      "fullName": "Parth Intwala",
+      "emailAddress": "parth@gmail.com",
+      "mobileNumber": "736287627",
+      "cityName": "Navsari",
+      "dateHire": "2020-02-02",
+      "departmentName": "Mobile",
+      "gender": "MALE",
+      "employeeType": false,
+      "id": 10
+    },
+    {
+      "fullName": "Shiv Desai",
+      "emailAddress": "shivdesai612@gmail.com",
+      "mobileNumber": "07567 584736",
+      "cityName": "valsad",
+      "dateHire": "2020-02-24",
+      "departmentName": "angular",
+      "gender": "MALE",
+      "employeeType": "false",
+      "id": 11
     }
   ]
 }

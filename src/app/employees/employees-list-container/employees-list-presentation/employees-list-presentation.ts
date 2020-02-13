@@ -10,20 +10,30 @@ import { Employee } from '../../employee.model';
 })
 export class EmployeesListPresentation implements OnInit {
 
-  id;number;
+  id:number;
   // @Input() employees$ : Observable<Employee[]>;
   @Input() empObj;
   @Output() deleteEvent = new EventEmitter<number>();
   constructor() { 
     // console.log(this.employees$);
   }
-  idDelete(id:number)
-  {
-    // debugger;
-    this.deleteEvent.emit(id);
-    
-  }
+
   ngOnInit() {
+  
   }
 
+  /**
+   * This function will delete the employee at particular id
+   * @param id This take employee id as parameter
+   */
+  idDelete(id:number): void
+  {
+    // debugger;
+    this.deleteEvent.emit(id); 
+  }
+
+  editData(employeeId: number)
+  {
+    
+  }
 }

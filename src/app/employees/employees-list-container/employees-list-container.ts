@@ -11,7 +11,7 @@ import { Employee } from '../employee.model';
 export class EmployeesListContainer implements OnInit {
 
   empObj:any;
-  employeeDetails$ = new Observable<Employee[]>();
+  // employeeDetails$ = new Observable<Employee[]>();
 
   constructor(private emp:EmployeesService) {
     this.GetDetails();
@@ -19,10 +19,12 @@ export class EmployeesListContainer implements OnInit {
 
 
   ngOnInit() {
-
   }
 
-  GetDetails()
+  /**
+   * This function will get the data from JSON file 
+   */
+  GetDetails():void
   { 
     debugger
     this.emp.GetDetails().subscribe(
@@ -35,10 +37,14 @@ export class EmployeesListContainer implements OnInit {
    
   }
 
-  idDelete($event)
+  /**
+   * 
+   * @param id This will send the id of employee to the service 
+   */
+  idDelete(id:number): void
   {
     debugger
-    this.emp.DeleteDetails($event).subscribe(()=>
+    this.emp.DeleteDetails(id).subscribe(()=>
     {
       this.GetDetails();
     });

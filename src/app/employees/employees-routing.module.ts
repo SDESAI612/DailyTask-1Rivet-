@@ -15,6 +15,10 @@ const routes: Routes = [
     component:EmployeesFormContainer
   },
   {
+    path:"Edit/:id",
+    component: EmployeesFormContainer
+  },
+  {
     path:"",
     component: EmployeesListContainer
   }
