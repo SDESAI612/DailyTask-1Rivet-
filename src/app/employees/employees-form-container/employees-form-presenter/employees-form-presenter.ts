@@ -1,0 +1,26 @@
+import { Injectable } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
+@Injectable()
+export class EmployeesPresenterService {
+
+  constructor(private fb: FormBuilder) { }
+  
+/**
+ * This function will create the formGroup
+ */
+ public buildEmployeeForm():FormGroup
+ {
+    debugger;
+    return this.fb.group({
+    fullName: [''],
+    emailAddress: [''],
+    mobileNumber: [''],
+    cityName: [''],
+    dateHire: [''],
+    departmentName: [''],
+    gender: [''],
+    employeeType: ['false']
+  });
+}
+}
