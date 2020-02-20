@@ -11,7 +11,7 @@
                     <input formControlName="fullName" class="form-control" placeholder="Full name" type="text">
                     <div *ngIf="submitted && formControl.firstName.errors" class="invalid-feedback">
                         <div *ngIf="formControl.firstName.errors.required">*First Name is required</div>
-                        <div *ngIf="formControl.firstName.errors.minlength  ">*min 4 characters required</div>
+                        <div *ngIf="formControl.firstName.errors.minlength">*min 4 characters required</div>
                     </div>
                 </div>
                 <!-- form-group// -->
