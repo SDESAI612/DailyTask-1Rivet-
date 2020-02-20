@@ -1,1 +1,8 @@
-<p>presentation works!</p>
+<br><br><button (click)="createForm()">Factory Resolver</button><button (click)="clearForm()">Clear</button>&nbsp;&nbsp;
+<button (click)="createFormCdk()">CDK</button><button (click)="clearFormCdk()">Clear</button>&nbsp;&nbsp;
+<button (click)="createFormOverlay()">Overlay</button>
+<br><br>
+<ng-template [cdkPortalOutlet]="selectedPortal"></ng-template>
+<ng-template #messagecontainer></ng-template>
+
+<br><br>

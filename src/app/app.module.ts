@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { PortalModule,   } from '@angular/cdk/portal'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -13,8 +13,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserModule,
-    RouterModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
