@@ -1,0 +1,14 @@
+@import "node_modules/bootstrap/scss/_functions.scss";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+// @if $enable-flex {
+//     @each $breakpoint in map-keys($grid-breakpoints) {
+//         @include media-breakpoint-up($breakpoint) {
+//             @for $size from 1 through $grid-columns {
+//                 .col-#{$breakpoint}-#{$size} {
+//                     max-width: percentage($size / $grid-columns);
+//                 }
+//             }
+//         }
+//     }
+// }

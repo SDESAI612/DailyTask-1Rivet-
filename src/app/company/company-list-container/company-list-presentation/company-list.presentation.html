@@ -1,0 +1,26 @@
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th>Department</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let companyData of companyList$">
+            <th>{{companyData.id}}</th>
+            <th> {{companyData.clientName}} </th>
+            <th>{{companyData.location}}</th>
+            <th>{{companyData.contactNumber}}</th>
+            <th>{{companyData.email}}</th>
+            <th>{{companyData.designation}}</th>
+            <th> <button (click)="delete(companyData.id)">Delete</button>
+                <!-- <a routerLink="Edit/{{companyData.id}}">edit</a> -->
+            </th>
+        </tr>
+    </tbody>
+</table>
